@@ -1,0 +1,18 @@
+{
+  "configurations": {
+    "launch current file": {
+      "adapter": "cust_vscode-ruby",
+      "configuration": {
+        "name": "RSpec - active spec file only",
+        "type": "Ruby",
+        "request": "launch",
+        "program": "${workspaceRoot}/bin/rspec",
+        "args": [
+          "-I",
+          "${workspaceRoot}",
+          "${file}"
+         ]
+      }
+    }
+  }
+}
