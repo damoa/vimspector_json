@@ -1,9 +1,18 @@
 {
   "configurations": {
-    "launch current file": {
+    "Ruby: Listen for rdebug-ide": {
       "adapter": "cust_vscode-ruby",
       "configuration": {
-        "name": "RSpec - active spec file only",
+        "type": "Ruby",
+        "request": "attach",
+        "remoteHost": "127.0.0.1",
+        "remotePort": "1234",
+        "remoteWorkspaceRoot": "${workspaceRoot}"
+      }
+    },
+    "rspec current file": {
+      "adapter": "cust_vscode-ruby",
+      "configuration": {
         "type": "Ruby",
         "request": "launch",
         "program": "${workspaceRoot}/bin/rspec",
@@ -13,6 +22,17 @@
           "${file}"
          ]
       }
+    },
+    "Rails Server": {
+      "adapter": "cust_vscode-ruby",
+      "configuration": {
+        "type": "Ruby",
+        "request": "launch",
+        "program": "${workspaceRoot}/bin/rails",
+        "args": [
+          "server"
+         ]
+       }
     }
   }
-}
+ }
