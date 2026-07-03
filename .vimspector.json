@@ -1,17 +1,12 @@
 {
+  "$schema": "https://puremourning.github.io/vimspector/schema/vimspector.schema.json",
   "configurations": {
-    "launch current file": {
-      "adapter": "cust_vscode-ruby",
+    "run": {
+      "adapter": {
+        "port": 54321
+      },
       "configuration": {
-        "name": "RSpec - active spec file only",
-        "type": "Ruby",
-        "request": "launch",
-        "program": "${workspaceRoot}/bin/rspec",
-        "args": [
-          "-I",
-          "${workspaceRoot}",
-          "${file}"
-         ]
+        "request": "attach"
       }
     }
   }
