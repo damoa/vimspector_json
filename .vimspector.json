@@ -1,3 +1,4 @@
+// run "rdbg -O --port=54321 -c -- bin/rails s" first
 {
   "$schema": "https://puremourning.github.io/vimspector/schema/vimspector.schema.json",
   "configurations": {
