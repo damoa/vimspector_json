@@ -2,12 +2,14 @@
 {
   "$schema": "https://puremourning.github.io/vimspector/schema/vimspector.schema.json",
   "configurations": {
-    "run": {
+    "attach running rdbg": {
       "adapter": {
         "port": 54321
       },
       "configuration": {
-        "request": "attach"
+        "request": "attach",
+        "cwd": "${workspaceRoot}",
+        "localfs": true
       }
     }
   }
